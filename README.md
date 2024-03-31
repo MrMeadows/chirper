@@ -3,7 +3,7 @@ In this lab, you will be building your first front-end application using ReactJS
 
 It's called Chirper, a platform where you can post short messages on the internet for all the world to see!
 
- 
+
 
 Getting Started
 Create a new project with Create React App.
