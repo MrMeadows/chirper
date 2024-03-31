@@ -5,7 +5,7 @@ Need 'submission' container for text and input on bottom 25% of screen
 Need text input and submit button on bottom of page
 Need 'timeline' container within body container
 
-Need to design in CSS *****only to distinguish *HEY* *LOOK* *HERE* different parts of project****
+Need to design in CSS *only to distinguish different parts of project*
 
 - Submit function takes input and pushes a card onto the screen containing the inputted text
 	- find correct term from previous lab
