@@ -3,13 +3,14 @@ Chirper is a lab from the Covalence online technical trade school of web develop
 In the future, Chirper will be upgraded to be 'Yowler', a version of Chirper that is inspired by the Wizarding World.
 ***
 
-## Development Objectives
-
 ### Structure Objectives
 1. Need 'body' container covering central 60% of screen (20% margins either side)
+	1. **New (Added 4/3/24)**: Rewrite 'App.jsx' for this purpose
 1. Need 'submission' container for text and input on bottom 25% of screen
-1. Need text input and submit button on bottom of page
+	1. **New (Added 4/3/24)**: Create 'Input.jsx' for this purpose
+1. Need text input and submit button within 'submission' container
 1. Need 'timeline' container within body container
+	1. **New (Added 4/3/24)**: Create 'Timeline.jsx' for this purpose
 
 *Note: Need to design in CSS **only to distinguish different parts of project**
 
@@ -24,5 +25,6 @@ In the future, Chirper will be upgraded to be 'Yowler', a version of Chirper tha
 	1. automatic scroll down when beyond text-box capacity
 	1. character counter somewhere... somewhere
 
-##*Future State*
+## Future State
+
 
