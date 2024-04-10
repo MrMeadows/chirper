@@ -2,8 +2,8 @@ import React from 'react';
 
 const App = () => {
     return (
-        <div>
-            <h1>Hidely-ho, neighborino!</h1>
+        <div className="container" style={{ width: "60%" }}>
+            <p>what in the hooey?</p>
         </div>
     )
 }
