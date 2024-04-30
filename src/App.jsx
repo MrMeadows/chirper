@@ -1,9 +1,12 @@
 import React from 'react';
+import Feed from './Feed.jsx';
+import Input from './Input.jsx';
 
 const App = () => {
     return (
-        <div className="container" style={{ width: "60%" }}>
-            <p>what in the hooey?</p>
+        <div>
+            <Feed />
+            <Input />
         </div>
     )
 }
