@@ -1,6 +1,6 @@
 import React from 'react';
-import Feed from './Feed.jsx';
-import Input from './Input.jsx';
+import Feed from './components/Feed.jsx';
+import Input from './components/Input.jsx';
 
 const App = () => {
     return (

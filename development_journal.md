@@ -1,5 +1,9 @@
 # Development Journal
 
+## 4/30/2024
+
+I've added a "Post" component to my project. In the future, I intend for this component to be called when a user writes and submits a post via the Input component. That may be what I work on next, but it seems a large task, so I'll need to study up on how I'll do that.
+
 ## 4/29/2024
 
 I've written and added the most basic versions of the Feed and Input components into the App.jsx file. My next goals are to style the Input component and create the cards that will reside within the Feed component. After that, I will work on a continuous scroll functionality within the Feed component. I have a baby coming in approximately thirty days. We'll see how much progress I can make.
