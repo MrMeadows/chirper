@@ -1,5 +1,9 @@
 # Development Journal
 
+## 5/1/2024
+
+The Input component is designed well enough to permit me some sanity when working on its functionality (Thank you, Luke! https://github.com/przekwas)! Now I can work on making the textarea and username correspond to the correct values of the header and body of the Post component. After that, I'll make the "Chirp!" button create an instance of the Post component to the Feed component. Then, the scroll function in the Feed component.
+
 ## 4/30/2024
 
 I've added a "Post" component to my project. In the future, I intend for this component to be called when a user writes and submits a post via the Input component. That may be what I work on next, but it seems a large task, so I'll need to study up on how I'll do that.
