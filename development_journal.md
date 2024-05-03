@@ -1,5 +1,11 @@
 # Development Journal
 
+## 5/3/2024
+
+Alright, I realized that generating a post is far more urgent than manipulating the contents of a generated post (the egg must come before the omelet), so I added an event listener to the 'Chirp!' button, but it fires twice with each click. Also, I found that I needed to insert the code into my App.jsx instead of above the return in my Input.jsx. This must be due to scope. The element my event listener was trying to access didn't exist at the time it was being called. Putting that event listener in the App.jsx allowed the Input.jsx time to render, so the code was then accessible.
+
+Next step is to remove the double firing.
+
 ## 5/1/2024
 
 The Input component is designed well enough to permit me some sanity when working on its functionality (Thank you, Luke! https://github.com/przekwas)! Now I can work on making the textarea and username correspond to the correct values of the header and body of the Post component. After that, I'll make the "Chirp!" button create an instance of the Post component to the Feed component. Then, the scroll function in the Feed component.
