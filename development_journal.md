@@ -1,5 +1,17 @@
 # Development Journal
 
+## 5/5/2024
+
+I'm sick today, so I relied on Higgs quite a bit for my education and guidance in this update. Basically, I asked Higgs how to solve these problems, and he gave me coding examples that I was able to translate into my own project. I am unsure if I relied too heavily on Higgs for this, but I figured that my manual typing out of the code plus my inquiries to Higgs for elaboration on the logic and purpose of these code bytes would make for satisfactory learning. Now I need to ensure I apply these concepts again, and I expect that I will.
+
+Next is to give the Feed an overflow functionality.
+
+## 5/4/2024
+
+Just kidding. Higgs, the online AI tutor from Covalence, informed me that directly manipulating the DOM in React is not a recommended approach. After some tutoring from Higgs, I implemented the Synthetic Events method in React. I also learned this in Covalence but I needed a refresher as it's been some time.
+
+So now that the Chirp! button in my Input component fires correctly, I can make it generate a post to the Feed component.
+
 ## 5/3/2024
 
 Alright, I realized that generating a post is far more urgent than manipulating the contents of a generated post (the egg must come before the omelet), so I added an event listener to the 'Chirp!' button, but it fires twice with each click. Also, I found that I needed to insert the code into my App.jsx instead of above the return in my Input.jsx. This must be due to scope. The element my event listener was trying to access didn't exist at the time it was being called. Putting that event listener in the App.jsx allowed the Input.jsx time to render, so the code was then accessible.

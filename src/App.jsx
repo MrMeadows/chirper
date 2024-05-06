@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Feed from './components/Feed.jsx';
 import Input from './components/Input.jsx';
 
 const App = () => {
 
-    const chirpBtn = document.getElementById('chirpBtn')
+    const [chirps, setChirps] = useState([]);
 
-    chirpBtn.addEventListener("click", function () {
-        console.log('did I do it?');
-    });
-    
+    const addChirp = (username, chirpContent) => {
+        const newChirp = {username, chirpContent: chirpContent};
+        setChirps(chirps => ([...chirps, newChirp]));
+    }
+
     return (
         <div>
-            <Feed />
-            <Input />
+            <Feed chirps={chirps} />
+            <Input addChirp={addChirp} />
         </div>
     )
 }

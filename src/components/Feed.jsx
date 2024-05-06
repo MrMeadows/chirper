@@ -1,11 +1,14 @@
 import React from 'react';
 import Post from './Post.jsx';
 
-const Feed = () => {
+const Feed = ({ chirps }) => {
     return (
-
-        <div className="container my-2 border border-dark rounded" style={{ width: "60%", height: "400px", verticalAlign: "top"}}>
-            <Post />
+        <div 
+            className="container my-2 border border-dark rounded"
+            style={{ width: "60%", height: "400px", verticalAlign: "top"}}>
+            {chirps.map((chirp, index) => (
+                <Post key={index} username={chirp.username} chirp={chirp.chirpContent} />
+            ))}
         </div>
     )
 }

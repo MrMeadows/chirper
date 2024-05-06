@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Input = () => {
+const Input = ({ addChirp }) => {
 
-    // Need JS to find id chirpBtn and make it add a <Post /> to the Feed.jsx... interesting problem!
+    const [username, setUsername] = useState('');
+    const [chirp, setChirp] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        addChirp(username, chirp);
+        setUsername('');
+        setChirp('');
+    }
 
     return (
-        <div className="container form my-2 border border-dark rounded" style={{ width: "60%", height: "100px", verticalAlign: "bottom"}}>
+        <form className="container form my-2 border border-dark rounded" onSubmit={handleSubmit} style={{ width: "60%", height: "100px", verticalAlign: "bottom"}}>
             <div className="my-2 p-2 row">
-                <textarea placeholder="What's chirpin'?" className="col-8" rows="3"></textarea>
+                <textarea 
+                    placeholder="What's chirpin'?" 
+                    className="col-8" 
+                    rows="3" 
+                    value={chirp}
+                    onChange={(e) => setChirp(e.target.value)}>
+                </textarea>
                 <div className="d-flex flex-column col-4 offset-col-1">
-                    <input type="text" placeholder="Username" className="mb-1"></input>
-                    <button className="btn btn-primary mt-1" id="chirpBtn">Chirp!</button>
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        className="mb-1"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                    <button type="submit"  className="btn btn-primary mt-1" id="chirpBtn">Chirp!</button>
                 </div>
             </div>
-        </div>
+        </form>
     )
 }
 

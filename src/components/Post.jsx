@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Post = () => {
+const Post = ({ username, chirp }) => {
     return (
         <div className="card card-body my-3">
-            <h3 className="card-title">Mr Meadows</h3>
-            <p className="card-text">I am a test card. This text is here to fill in the blank space and allow me a visual measurement of this addition to my project.</p>
+            <h3 className="card-title">{username}</h3>
+            <p className="card-text">{chirp}</p>
         </div>
     )
 }
