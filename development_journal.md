@@ -1,5 +1,19 @@
 # Development Journal
 
+## 5/12/2024
+
+Happy Mother's day, all y'all mothers.
+
+I added the UUID but I have yet to add the timestamp. In the UUID npm read-me, there was no instruction on how to apply a UUID, which was good because it forced me to figure it out. I'm unsure if it was necessary, but I decided to generate a UUID per chirp and *assign it to a variable* rather than generate it directly into the chirp itself. I figured it was cleaner and safer, should something go awry.
+
+Next, I need to add that timestamp. Almost to the CSS power-hour! That will be where I learn a lot of what I've felt I was lacking.
+
+## 5/9/2024
+
+Well that was easier than I thought it would be. CSS overflow was all I needed. Admittedly, I expected I would need to do something special in React to solve this problem.
+
+Next, per a conversation with Luke @ Covalence, I will add UUID's and a timestamp to each Chirp.
+
 ## 5/5/2024
 
 I'm sick today, so I relied on Higgs quite a bit for my education and guidance in this update. Basically, I asked Higgs how to solve these problems, and he gave me coding examples that I was able to translate into my own project. I am unsure if I relied too heavily on Higgs for this, but I figured that my manual typing out of the code plus my inquiries to Higgs for elaboration on the logic and purpose of these code bytes would make for satisfactory learning. Now I need to ensure I apply these concepts again, and I expect that I will.
