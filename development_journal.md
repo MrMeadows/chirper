@@ -1,5 +1,13 @@
 # Development Journal
 
+## 5/13/2024
+
+day.js is now added to and running within this project. Each post now has a date-and-timestamp, which is perfect. However, the fact that they update each time I submit a post to the app is less than perfect.
+
+I'm thinking this might be due to each post's continued existence as a live component in my Feed. Therefore, if I can instead create a timestamp at the conception of each post *at and only during the exact moment I **submit** the post*, then perhaps this issue will be resolved. This is most certainly an issue of **scope**, so I do not believe there's any chance of successfully creating an immutable timestamp within the Post component.
+
+The next step is to move the day.js code into the Input component and have it create a new variable each time a post is submitted.
+
 ## 5/12/2024
 
 Happy Mother's day, all y'all mothers.
