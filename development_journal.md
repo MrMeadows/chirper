@@ -1,5 +1,11 @@
 # Development Journal
 
+## 5/14/2024
+
+I re-implemented day.js so the timestamp is only created as a post is generated, thereby eliminating the universal timestamp issue (UTI). I resolved this issue by removing the generative origin code of the timestamp from the Post component and adding the timestamp as a property of the Chirp object, with the generative origin code of the timestamp residing within handleSubmit function of the Input component. This also meant that I had to add the timestamp property in each components reference to the Chirp object, ensuring that each component had all necessary props and values to correctly receive and display the timestamp in each Chirp.
+
+Alright, my next step is to create a faux login page so that users can Chirp under a continuous alias, rather than input an alias with each Chirp (fake, lame). I've already been advised about this by Luke. I'm going to need to create a conditional render in my App component, and I'll probably create a Login component just to keep the App to a minimal number of lines.
+
 ## 5/13/2024
 
 day.js is now added to and running within this project. Each post now has a date-and-timestamp, which is perfect. However, the fact that they update each time I submit a post to the app is less than perfect.

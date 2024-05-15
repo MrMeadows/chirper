@@ -7,8 +7,8 @@ const App = () => {
 
     const [chirps, setChirps] = useState([]);
 
-    const addChirp = (username, chirpContent) => {
-        const newChirp = {username, chirpContent: chirpContent};
+    const addChirp = (username, chirpContent, timestamp) => {
+        const newChirp = {username, chirpContent: chirpContent, timestamp: timestamp};
         setChirps(chirps => ([...chirps, newChirp]));
     }
 

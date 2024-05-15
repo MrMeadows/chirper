@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import dayjs from 'dayjs';
 
 const Input = ({ addChirp }) => {
 
@@ -6,8 +7,10 @@ const Input = ({ addChirp }) => {
     const [chirp, setChirp] = useState('');
 
     const handleSubmit = (e) => {
+
         e.preventDefault();
-        addChirp(username, chirp);
+        let timestamp = dayjs().format('MMM D, YYYY h:mm A');
+        addChirp(username, chirp, timestamp);
         setUsername('');
         setChirp('');
     }
