@@ -1,5 +1,9 @@
 # Development Journal
 
+## 5/18/2024
+
+I have setup my Login component and shall now ensure that the user input name will be accepted as a value by the React useState in App.jsx. After that, I will being the CSS / Bootstrap Power Hour and learn as much as I can designing the aesthetics of this project.
+
 ## 5/14/2024
 
 I re-implemented day.js so the timestamp is only created as a post is generated, thereby eliminating the universal timestamp issue (UTI). I resolved this issue by removing the generative origin code of the timestamp from the Post component and adding the timestamp as a property of the Chirp object, with the generative origin code of the timestamp residing within handleSubmit function of the Input component. This also meant that I had to add the timestamp property in each components reference to the Chirp object, ensuring that each component had all necessary props and values to correctly receive and display the timestamp in each Chirp.
