@@ -1,5 +1,31 @@
 # Development Journal
 
+## 5/20/2024
+
+The plan for today was to set the 'username' variable to a constant value in App.jsx so that every post will have the same username. I did this, and I removed the "username" input field from the Input component.
+
+The next step is to shift the source of the 'username' variable from App to the Login component.
+
+After trying to get the username to be sourced from the Login component, I am stuck trying to get the conditional render to operate based off of the 'username' variable as it would come from the Login component. I will have to try again tomorrow.
+
+## 5/19/2024
+
+After attempting to shift the origin of the username prop from Input to Login, but still generate the Post correctly, I found myself very confused and thus requiring a reversion back to my project's snapshot on 5/18.
+
+After this, I went back to Covalence to rewatch the lecture on props, as I think my struggle exists in an insufficient understanding of how props pass between child components. I've also requested from Higgs a summary of how props pass between child components.
+
+One final note. 5/18 was a Saturday, and so it was my only day where I can devote a substantial amount of time to code. The day felt wasted because I had to not only revert my project to a previous snapshot, but I also was unable to give more time to my home and my wife. We had decided that, since our mutual presence proves difficult for either of us to abstain from conversation, it would be necessary to establish some way for my wife to know how much and for how long she must ignore my presence so that I may focus.
+
+This has resulted in my creation of five categories that define what kind of work I will be doing.
+
+### The Five Categories, Ordered by Focus Required
+
+1. Design - Unfocused, conversation is welcome
+1. Code - Low focus, conversation will be distracted
+1. Plan - Medium focus, sporadically capable of conversation
+1. Research - High focus, minimal interruption please
+1. Logic - Unbroken focus, disturb only if urgent
+
 ## 5/18/2024
 
 I have setup my Login component and shall now ensure that the user input name will be accepted as a value by the React useState in App.jsx. After that, I will being the CSS / Bootstrap Power Hour and learn as much as I can designing the aesthetics of this project.

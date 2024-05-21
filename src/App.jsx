@@ -6,23 +6,18 @@ import Login from './components/Login.jsx';
 
 const App = () => {
 
-    // const [loginName, setLoginName] = useState('');
-
-    let loginName = "bob";
-
     const [chirps, setChirps] = useState([]);
 
-    /* const loginUser = (username) => {
-        const activeUser = 
-    } */
+    const [username, addUsername] = useState([]);
 
-    const addChirp = (username, chirpContent, timestamp) => {
+    const addChirp = (chirpContent, timestamp) => {
+        
         const newChirp = {username, chirpContent: chirpContent, timestamp: timestamp};
         setChirps(chirps => ([...chirps, newChirp]));
     }
 
-    if (loginName) {
-        return <Login />
+    if (username) {
+        return <Login addUsername={addUsername}/>
     } else {
         return (
             <div>
