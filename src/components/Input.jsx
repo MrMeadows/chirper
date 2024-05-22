@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import dayjs from 'dayjs';
 
-const Input = ({ addChirp }) => {
+const Input = ({ username, addChirp }) => {
 
     const [chirp, setChirp] = useState('');
 
@@ -9,7 +9,7 @@ const Input = ({ addChirp }) => {
 
         e.preventDefault();
         let timestamp = dayjs().format('MMM D, YYYY h:mm A');
-        addChirp(chirp, timestamp);
+        addChirp(username, chirp, timestamp);
         setChirp('');
     }
 

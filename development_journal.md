@@ -1,5 +1,21 @@
 # Development Journal
 
+## 5/21/2024
+
+Wow. Okay. I got the username to pull from the Login component but I'm not entirely sure how I did it becauase it took an hour of experimenting. I, of course, wish that I could simply know the logic and then apply the logic to the program - but this is learning, so please take pity on me.
+
+In the App component, I created an addLogin function to take one argument, a 'login' variable, and use it to create a 'newLogin' const. Perhaps this is redundant, but I copied the 'addChirp' function as much as possible, simply because that is what I have learned thus far.
+
+With the 'newLogin' const created, I used a useState hook in the App component, 'setUsername', to take the 'newLogin' variable and set it as the 'username'. Then I added the 'addLogin' function as a property to the Login component, and fed the 'username' variable from the Login component to the 'addLogin' function via a replica of the 'handleSubmit' function in my Input component. It should also be noted that I removed the 'e.preventDefault' command from the 'handleSubmit' function in the Login component, since I *do*, in fact, want the default function of the submit button to refresh my page after capturing the username.
+
+The next step is to correctly feed the 'username' property into the 'addChirp' function.
+
+** Edit: I did it. That was punishing! My wife asked how I figured it out, and my only answer was, "Um... I tested everything." It turns out my creation of the newLogin const out of the 'login' variable resulted in my 'username' variable being of the 'object' type. My app was very angry that I was trying to pass an object, with no keys, to my child components. Once I removed the unnecessary step of creating the newLogin const and instead just attributed the 'login' variable directly to my 'setUsername' function, and after I had already previously fixed the condition upon which my page re-renders by means of another useState hook to identify when a user is logged in, my posts on 'Chirper' now correctly display a session-specific username to each post. Yay! This took two hours.
+
+Tomorrow, my objective is to begin planning how I'll make the pop-up modal work for posting to Chirper. That shouldn't be too hard!
+
+Which is exactly what I said about the login page...
+
 ## 5/20/2024
 
 The plan for today was to set the 'username' variable to a constant value in App.jsx so that every post will have the same username. I did this, and I removed the "username" input field from the Input component.

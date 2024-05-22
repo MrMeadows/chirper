@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-const Login = ({ addUsername }) => {
+const Login = ({ addLogin }) => {
 
     const [username, setUsername] = useState([]);
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        addUsername({username})
+        console.log(username);
+        addLogin(username);
     }
 
     return (
