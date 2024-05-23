@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
 import dayjs from 'dayjs';
 
-const Input = ({ username, addChirp }) => {
+const Input = ({ username, addChirp, onClose }) => {
 
     const [chirp, setChirp] = useState('');
 
-    const createChirpBtnClick = (e) => {
-        let modal = document.getElementById('modal')
-        modal.style.display = 'block'
-    }
-
     const handleSubmit = (e) => {
-
         e.preventDefault();
         let timestamp = dayjs().format('MMM D, YYYY h:mm A');
         addChirp(username, chirp, timestamp);
@@ -20,14 +14,14 @@ const Input = ({ username, addChirp }) => {
 
     return (
         <div>
-            <div className="container d-flex justify-content-center">
+            <div 
+            className="container-fluid d-flex h-100 bg-dark bg-opacity-50 align-items-center justify-content-center position-fixed top-50 start-50 translate-middle">
                 <form 
-                className="d-flex container form m-auto border border-dark rounded w-50 h-50 z-1 position-fixed" 
-                onSubmit={handleSubmit} 
-                style={{display: 'none', backgroundColor: '#A569BD'}}
+                className="container d-flex form m-auto border border-dark rounded bg-danger-subtle w-50 h-50 z-1 position-relative" 
+                onSubmit={handleSubmit}
                 id="modal">
                     <div className="my-2 p-2 row">
-                        <span class="h3 float-ends">&times;</span>
+                        <span class="h3 float-start position-relative" onClick={onClose}>&times;</span>
                         <textarea 
                             placeholder="What's chirpin'?" 
                             className="col-8" 
@@ -40,7 +34,6 @@ const Input = ({ username, addChirp }) => {
                         </div>
                     </div>
                 </form>
-                <button type="button" className="btn btn-primary mb-2 w-50" onClick={createChirpBtnClick}>Create Chirp</button>
             </div>
         </div>
     )

@@ -1,5 +1,9 @@
 # Development Journal
 
+## 5/23/2024
+
+With the assistance of AI, I was able to get the pop-up modal functioning correctly. Now I just have to work the layout of the pop-up modal contents so it looks more presentable.
+
 ## 5/22/2024
 
 Today I began converting the form within the Input component into a pop-up modal. So far, I have coded the functionality and some of the styling for the pop-up modal, but I am struggling to get the pop-up to display directly in the center of my webpage.
