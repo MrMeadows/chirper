@@ -1,5 +1,11 @@
 # Development Journal
 
+## 5/22/2024
+
+Today I began converting the form within the Input component into a pop-up modal. So far, I have coded the functionality and some of the styling for the pop-up modal, but I am struggling to get the pop-up to display directly in the center of my webpage.
+
+I feel like the issue is that the Input component wants to center at its location relative to its placement within the parent App. This means that I will have to somehow change the styling of this pop-up from within the parent App.
+
 ## 5/21/2024
 
 Wow. Okay. I got the username to pull from the Login component but I'm not entirely sure how I did it becauase it took an hour of experimenting. I, of course, wish that I could simply know the logic and then apply the logic to the program - but this is learning, so please take pity on me.
