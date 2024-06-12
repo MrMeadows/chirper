@@ -5,7 +5,6 @@ const Login = ({ addLogin }) => {
     const [username, setUsername] = useState([]);
 
     const handleSubmit = (e) => {
-        console.log(username);
         addLogin(username);
     }
 
@@ -26,13 +25,7 @@ const Login = ({ addLogin }) => {
 
                             <label htmlFor="floatingInput">Name</label>
                         </div>
-                        <h6>Which house are you in?</h6>
-                        <select className="form-select my-3">
-                            <option defaultValue="1" id="hogwarts">Gryffindor</option>
-                            <option value="2" id="slytherin">Slytherin</option>
-                            <option value="3" id="ravenclaw">Ravenclaw</option>
-                            <option value="4" id="hufflepuff">Hufflepuff</option>
-                        </select>
+
                         <button className="btn btn-primary w-100 py-2" type="submit">Enter</button>
                     </form>
                 </div>

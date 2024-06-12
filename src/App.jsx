@@ -33,11 +33,13 @@ const App = () => {
         return <Login addLogin={addLogin} />
     } else {
         return (
-            <div>
-                <Feed chirps={chirps} />
-                    <div className="d-flex m-auto flex-column col-4 offset-col-1">
-                        <button type="submit"  className="btn btn-primary mt-1" id="chirpBtn" onClick={toggleModal}>Chirp!</button>
-                    </div>
+            <div className="container d-flex flex-column vh-100">
+                <div className="d-flex my-2 h-75 mh-75 flex-column flex-grow-1">
+                    <Feed chirps={chirps}/>
+                </div>
+                <div className="d-flex m-auto flex-column col-4 mb-2">
+                    <button type="submit"  className="btn btn-primary" id="chirpBtn" onClick={toggleModal}>Chirp!</button>
+                </div>
                 {showModal && <Input addChirp={addChirp} username={username} onClose={toggleModal} />}
             </div>
         )
